@@ -43,13 +43,11 @@ namespace CryptBox
                 bool success = CheckingUtils.checkAllFiles(args);
                 if (!success)
                 {
-                    MessageBox.Show("Check Failed.", "CryptBox");
-                    this.Close();
+                    Environment.Exit(-1);
                 }
                 else
                 {
-                    MessageBox.Show("Success.");
-                    this.Close();
+                    Environment.Exit(0);
                 }
 
 
